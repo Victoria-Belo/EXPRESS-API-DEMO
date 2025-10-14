@@ -1,7 +1,7 @@
 {
-  "name": "project_a",
+  "name": "EXPRESS-API-DEMO",
   "version": "1.0.0",
-  "description": "",
+  "description": "API RESTful - dashboard demo",
   "main": "app/app.js",
   "type": "module",
   "scripts": {
@@ -9,7 +9,7 @@
     "start": "node app/app.js"
   },
   "keywords": [],
-  "author": "Victória Beleu posso vê-lo no meu node_modules?o",
+  "author": "Victória Belo",
   "license": "ISC",
   "dependencies": {
     "express": "^5.1.0"
