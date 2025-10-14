@@ -1,0 +1,17 @@
+{
+  "name": "project_a",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app/app.js"
+  },
+  "keywords": [],
+  "author": "Victória Beleu posso vê-lo no meu node_modules?o",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
