@@ -1,15 +1,15 @@
 import express from "express";
+import dotenv from 'dotenv';
+import cors from 'cors';
+import storeRoutes from './routes/storeRoutes.js'
 
-const PORT = 3000;
-const URL = 'https://fakestoreapi.com/products';
+dotenv.config({path: './.env.development'});
+
 const app = express();
+const PORT = process.env.PORT || 3000;
 
-app.get("/", function(req, res){
-    fetch('https://fakestoreapi.com/products')
-    .then(response => response.json())
-    .then(data => res.send(data));
-});
-
-app.listen(PORT, function(){ console.log("PORT 3000 IS ON")});
+app.use(cors());
+app.use("/", storeRoutes);
+app.listen(PORT, function(){ console.log(`${PORT} is ON`)});
 
 
