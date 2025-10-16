@@ -1,7 +1,7 @@
 {
   "name": "EXPRESS-API-DEMO",
   "version": "1.0.0",
-  "description": "API RESTful - dashboard demo",
+  "description": "API RESTful - dashboard",
   "main": "app/app.js",
   "type": "module",
   "scripts": {
@@ -12,6 +12,8 @@
   "author": "Victória Belo",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
     "express": "^5.1.0"
   }
 }
