@@ -10,6 +10,10 @@ const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 app.use("/", storeRoutes);
+app.use("/cards", storeRoutes);
+
 app.listen(PORT, function(){ console.log(`${PORT} is ON`)});
+
+
 
 
