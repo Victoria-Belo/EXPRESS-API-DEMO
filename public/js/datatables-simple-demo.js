@@ -44,11 +44,9 @@ async function createCards(){
     
     const product = await fetch('http://localhost:3000/cards')
     .then((data) => data.json())
-    .then((json) =>  {
-        
+    .then((json) =>  {       
         return json;
-    });
-    console.log(product.img);
+    });   
     if(product){//se tiver dados       
         cardProduct.innerHTML = `<img src=${product.img} width=\"100px\" height=\"auto\">`;
         cardPrice.innerHTML = `<p>${product.price}</p>` ; 

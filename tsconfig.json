@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    /* Diretórios de entrada e saída */
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    /* Configurações do ambiente Node */
+    "target": "ES2020",
+    "module": "ESNext",         
+    "moduleResolution": "Node",
+    "types": ["node"],
+
+    /* Configurações úteis para debugging */
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    /* Segurança e boas práticas */
+    "strict": true,
+    "esModuleInterop": true,     // facilita importações default do CommonJS
+    "skipLibCheck": true,
+
+    /* Performance */
+    "forceConsistentCasingInFileNames": true,
+
+    /* Permite imports de arquivos JSON sem problemas */
+    "resolveJsonModule": true,
+    /* Garante compatibilidade total com ES Modules */
+    "isolatedModules": true
+  },
+  "include": ["src"]
+}
