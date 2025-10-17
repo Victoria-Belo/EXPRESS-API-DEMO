@@ -50,7 +50,7 @@ async function createCards(){
     });
     console.log(product.img);
     if(product){//se tiver dados       
-        cardProduct.innerHTML = `<img src=${product.img} width=\"150px\" height=\"auto\">`;
+        cardProduct.innerHTML = `<img src=${product.img} width=\"100px\" height=\"auto\">`;
         cardPrice.innerHTML = `<p>${product.price}</p>` ; 
         cardCategory.innerHTML = `<p>${product.category}</p>` ; 
         cardRating.innerHTML = `<p>${product.rating}</p>`;
